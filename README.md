@@ -1,3 +1,4 @@
+[![Listed on AIPM](https://img.shields.io/badge/listed_on-AIPM-6e40c9)](https://www.aipm-registry.com/skills?q=coreyhaines31)
 # Marketing Skills for AI Agents
 
 A collection of AI agent skills focused on marketing tasks. Built for technical marketers and founders who want AI coding agents to help with conversion optimization, copywriting, SEO, analytics, and growth engineering. Works with Claude Code, OpenAI Codex, Cursor, Windsurf, and any agent that supports the [Agent Skills spec](https://agentskills.io).
@@ -197,6 +198,28 @@ npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
 # List available skills
 npx skillkit install coreyhaines31/marketingskills --list
 ```
+
+### Option 7: 
+Every skill in this repo is also published individually on [AIPM](https://www.aipm-registry.com/), an open, npm-style registry for AI agent skills and prompts:
+
+```
+# Install the CLI
+npm install -g @aipm-registry/cli
+
+# Point at your project and pick a target (claude or cursor)
+aipm init --target claude
+
+# Install a skill by name
+aipm add @coreyhaines31/cro@1.0.0
+```
+
+Copy
+Browse or search the full set from this repo:
+
+aipm search marketing
+
+Copy
+Or browse directly: aipm-registry.com/publishers/coreyhaines31
 
 ## Upgrading from v1.x to v2.0
 
