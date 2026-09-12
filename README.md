@@ -198,6 +198,26 @@ npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
 npx skillkit install coreyhaines31/marketingskills --list
 ```
 
+### Option 7: 
+Every skill in this repo is also published individually on [AIPM](https://www.aipm-registry.com/), an open, npm-style registry for AI agent skills and prompts:
+```
+# Install the CLI
+npm install -g @aipm-registry/cli
+
+# Point at your project and pick a target (claude or cursor)
+aipm init --target claude
+
+# Install a skill by name
+aipm add @coreyhaines31/cro@1.0.0
+```
+
+Browse or search the full set from this repo:
+
+```aipm search marketing```
+
+Or browse directly: [aipm-registry.com/publishers/coreyhaines31](aipm-registry.com/publishers/coreyhaines31)
+
+
 ## Upgrading from v1.x to v2.0
 
 v2.0 renames 17 skills and consolidates `page-cro` + `form-cro` into a single `cro` skill. If you installed the v1.x skills, you'll have **stale old-name folders** in your install directory after upgrading — the new skills install alongside the old ones, so you'll see both `skills/page-cro/` and `skills/cro/`, etc. Clean them up:
